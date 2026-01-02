@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Contact Manager - Home</title>
+</head>
+<body>
+
+<section>
+
+    <!-- HERO SECTION -->
+    <div class="jumbotron jumbotron-fluid text-white" style="background-image: url('/image/banner.jpg'); background-size: cover; background-position: center; height: 100vh;">
+        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 class="display-3 font-weight-bold">Smart Contact Manager</h1>
+            <p class="lead">Manage your contacts smarter, faster, and safer.</p>
+            <a th:href="@{/signup}" class="btn btn-primary btn-lg mt-3 shadow">Get Started</a>
+        </div>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Why Choose Us?</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <i class="fas fa-lock fa-3x text-primary mb-3"></i>
+                <h5>Secure Data</h5>
+                <p>Your contact data is completely safe and encrypted.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-bolt fa-3x text-primary mb-3"></i>
+                <h5>Fast Access</h5>
+                <p>Get instant access to your saved contacts anytime.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                <h5>Responsive Design</h5>
+                <p>Use it smoothly on mobile, tablet, or desktop.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>

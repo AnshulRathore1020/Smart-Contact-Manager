@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Contact</title>
+</head>
+<body>
+<section>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="text-center">Update Contact</h3>
+
+        <form th:action="@{/user/process-update}" method="post" th:object="${contact}">
+          <input type="hidden" th:field="*{cId}"/>
+
+          <input type="text" th:field="*{name}" placeholder="Name" required /><br/>
+          <input type="text" th:field="*{secondName}" placeholder="Nick Name" required /><br/>
+          <input type="text" th:field="*{phone}" placeholder="Phone" required /><br/>
+          <input type="email" th:field="*{email}" placeholder="Email" required /><br/>
+          <input type="text" th:field="*{work}" placeholder="Work" required /><br/>
+          <textarea th:field="*{description}" placeholder="Description"></textarea><br/>
+
+          <button type="submit">Update</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

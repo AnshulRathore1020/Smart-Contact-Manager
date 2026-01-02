@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+</head>
+<body>
+<section>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-body text-center">
+
+        <h3><i class="fa-solid fa-poo"></i> Profile Information</h3>
+
+
+        <p><strong>Name:</strong> <span th:text="${user.name}">Name</span></p>
+        <p><strong>Email:</strong> <span th:text="${user.email}">Email</span></p>
+        <p><strong>Role:</strong> <span th:text="${user.role}">Role</span></p>
+        
+
+      </div>
+    </div>
+  </div>
+
+</section>
+</body>
+</html>
