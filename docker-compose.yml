@@ -1,0 +1,22 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: smartcontact
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  app:
+    image: smartcontactmanager
+    container_name: smartcontact-app
+    ports:
+      - "8085:8085"
+    depends_on:
+      - mysql
+    restart: always
+
+volumes:
+  mysql_data:
