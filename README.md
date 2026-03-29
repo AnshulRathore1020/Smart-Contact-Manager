@@ -1,4 +1,4 @@
-# Smart Contact Manager
+[# Smart Contact Manager
 
 This is a Spring Boot project that allows users to store and manage their contacts online.
 
@@ -24,3 +24,4 @@ This is a Spring Boot project that allows users to store and manage their contac
 Anshul Rathore  
 Email: anshulrathore09@gmail.com  
 GitHub: [AnshulRathore1020](https://github.com/AnshulRathore1020)
+](https://www.linkedin.com/in/anshul-rathore-it/)
